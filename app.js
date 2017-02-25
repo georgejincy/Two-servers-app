@@ -1,15 +1,16 @@
 var http = require('http');
+var twitter = requier('twitter');
 
 var PORT1 = 7000;
 var PORT2 = 7500;
 
 //generic for handling requests
 function handleRequest(request, response){
-	response.end("You are awesome " + request.url);
+	response.end("You are awesome ");
 
 }
 function handleRequest2(request, response){
-	response.end("You are bad! " + request.url);
+	response.end("You are bad! ");
 	
 }
 
